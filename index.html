@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>MilkTracker - Contador de Leche</title>
+    <title>MilkTracker - Contador de manuela</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome icons -->
@@ -503,7 +503,7 @@
                     spread: 60,
                     origin: { y: 0.8 }
                 });
-                showToast(`¡${friend.name} ha alcanzado ${friend.count} vasos! 🥛🎉`);
+                showToast(`¡${friend.name} ha alcanzado ${friend.count} japas! 🥛🎉`);
             }
 
             updateTotal();
@@ -573,7 +573,7 @@
 
         // Renderizar tabla de ranking
         function renderRanking() {
-            const rankingList = document.getElementById("ranking-list");
+            const rankingList = document.getElementById("lista de campeones");
             rankingList.innerHTML = "";
 
             const sorted = [...friends].sort((a, b) => b.count - a.count);
@@ -598,7 +598,7 @@
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="font-extrabold text-slate-800 text-sm">${friend.count}</span>
-                        <span class="text-xs text-slate-400 font-medium">vasos</span>
+                        <span class="text-xs text-slate-400 font-medium">tiradas</span>
                     </div>
                 `;
 
